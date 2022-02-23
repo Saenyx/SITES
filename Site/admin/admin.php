@@ -1,4 +1,4 @@
-<?php require_once 'inc/header.php';
+<?php require_once '../inc/header.php';
 
 
 // check admin: 
@@ -57,7 +57,7 @@ if (!empty($_POST)):
     if (!empty($_FILES['picture']['name'])): 
         $picture_name=date_format(new DateTime(), 'dmYHis') . uniqid() . $_FILES['picture']['name'];
         $picture_bdd='upload/picture'. $picture_name;
-        mkdir('../upload', 0777, true);
+        mkdir('../upload/picture', 0777, true);
         copy($_FILES['picture']['tmp_name'], '../'.$picture_bdd); 
     endif;
 
@@ -65,7 +65,7 @@ if (!empty($_POST)):
     if (!empty($_FILES['video']['name'])): 
         $video_name=date_format(new DateTime(), 'dmYHis') . uniqid() . $_FILES['video']['name'];
         $video_bdd='upload/video'. $video_name;
-        mkdir('../upload', 0777, true);
+        mkdir('../upload/video', 0777, true);
         copy($_FILES['video']['tmp_name'], '../'.$video_bdd); 
     endif;
 
@@ -98,10 +98,6 @@ endif;
 ?>
 
 
-<!-- A ajouter au form HTML -->
-<!-- input description: text dans textarea : <?= $upload['description'] ?? "" ; ?> -->
-<!-- input picture:  -->
-<!-- input video:  -->
 
 <form action="" method="post" enctype="multipart/form-data"> 
    
@@ -165,4 +161,4 @@ endif;
 </form>
 
 
-<?php require_once 'inc/footer.php'; ?>
+<?php require_once '../inc/footer.php'; ?>
