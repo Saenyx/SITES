@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../css/register.css">
+	<link rel="stylesheet" href="./register.php">
 	<title>Forgot password</title>
 </head>
 
@@ -28,7 +28,7 @@
 					</div>
 					<br>
 					<div class="form-group text-center">
-						<label> <a class="forget" href="../security/login.php" title="forget">Get your password reset link</a> </label>
+						<label> <a class="forget" href="/security/login.php" title="forget">Get your password reset link</a> </label>
 					</div>
 				</form>
 			</div>

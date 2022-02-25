@@ -23,20 +23,15 @@ a {
   color: #fff;
 }
 
-a:focus,
-a:hover {
-  color: #008080;
-}
-
 .checkbox-inline+.checkbox-inline,
 .radio-inline+.radio-inline {
   margin-top: 6px;
 }
 
-/******* Login Page *******/
+/******* login Page *******/
 
-body.login {
-background-image: url(../img-vid/NotNetflixBackground.jpg);
+section.login {
+background-image: url(.<?= SITE ?>img-vid/NotNetflixBackground.jpg);
 background-size: cover;
 }
 
@@ -48,7 +43,7 @@ background-size: cover;
 .login-container-wrapper .welcome {
   margin: 0 0 20px 0;
   font-size: 16px;
-  color: rgb(15, 15, 15);
+  color: rgb(255, 255, 255);
   text-align: center;
   letter-spacing: 1px;
 }
@@ -66,13 +61,12 @@ background-size: cover;
 
 .login-container-wrapper {
   max-width: 400px;
-  margin: 10% auto 8%;
-  padding: 40px;
+  margin: auto;
+  padding: 30px;
   box-sizing: border-box;
-  background: rgba(57, 89, 116, 0.8);
-  box-shadow: 1px 1px 10px 1px #000000, 8px 8px 0px 0px #344454, 12px 12px 10px 0px #000000;
+  background: rgba(28, 29, 29, 0.842);
   position: relative;
-  padding-top: 80px;
+  padding-top: 30px;
 }
 
 .login-form .form-group {
@@ -84,17 +78,17 @@ background-size: cover;
 .login-form .input-lg {
   font-size: 16px;
   height: 52px;
-  padding: 10px 25px;
+  padding: 10px 56px;
   border-radius: 0;
 }
 
 .login input[type="email"],
 .login input[type="password"],
 .login input:focus {
-  background-color: rgba(40, 52, 67, 0.75);
-  border: 1px solid #4a525f;
-  color: #eee;
-  border-left: 4px solid #93a5ab;
+  background-color: rgba(65, 65, 65, 0.75);
+  border: 0px solid #4a525f;
+  color: rgb(224, 26, 26);
+  text-align: center;
 }
 
 .login input:focus {
@@ -112,21 +106,26 @@ select:-webkit-autofill {
 
 .login .checkbox label,
 .login .checkbox a {
-  color: #ddd;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 15px;
 }
-
 
 .btn-success {
   background-color: transparent;
   background-image: none;
-  padding: 8px 50px;
-  border-radius: 0;
-  border: 2px solid #93a5ab;
-  box-shadow: inset 0 0 0 0 #7692A7;
+  padding: 8px 135px;
+  border-radius: 5px;
+  border: 2px solid #f11010a2;
+  background-color: red;
   -webkit-transition: all ease 0.8s;
   -moz-transition: all ease 0.8s;
   transition: all ease 0.8s;
 
+}
+
+a:hover{
+  color: #e23a06!important;
 }
 
 .btn-success:focus,
@@ -134,8 +133,8 @@ select:-webkit-autofill {
 .btn-success.active,
 .btn-success:active {
   background-color: transparent;
-  border-color: #fff;
-  box-shadow: inset 0 0 100px 0 #7692A7;
+  border-color: rgb(49, 49, 49);
+  box-shadow: inset 0 0 100px 0 #e23a06;
   color: #FFF;
 }
 #particles-js {

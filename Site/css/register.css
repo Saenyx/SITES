@@ -30,13 +30,17 @@ a {
 
 /******* register Page *******/
 
-body.register {
-background-image: url(../img-vid/NotNetflixBackground.jpg);
+section.register {
+background-image: url(/img-vid/NotNetflixBackground.jpg);
 background-size: cover;
 }
 
 .relative {
   position: relative;
+}
+
+a:hover{
+  color: #e23a06!important;
 }
 
 .register-container-wrapper .logo,
@@ -66,7 +70,7 @@ background-size: cover;
   box-sizing: border-box;
   background: rgba(28, 29, 29, 0.842);
   position: relative;
-  padding-top: 80px;
+  padding-top: 30px;
 }
 
 .register-form .form-group {

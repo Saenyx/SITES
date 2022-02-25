@@ -34,11 +34,10 @@
           <!-- TROISIEME COL !-->
           <div class="col-xs-6 col-md-3">
             <ul class="footer-links">
-              <li><a href="">Merci</a></li>
-              <li><a href="">Cesaire</a></li>
-              <li><a href="">du</a></li>
-              <li><a href="">Cours</a></li>
-              
+              <li><a href="https://youtu.be/dQw4w9WgXcQ" target="#">Merci</a></li>
+              <li><a href="https://youtu.be/dQw4w9WgXcQ" target="#">Cesaire</a></li>
+              <li><a href="https://youtu.be/dQw4w9WgXcQ" target="#">du</a></li>
+              <li><a href="https://youtu.be/dQw4w9WgXcQ" target="#">Cours</a></li>
             </ul>
           </div>
         </div>
