@@ -1,5 +1,5 @@
 
-    <link rel="stylesheet" href="./css/favoris.css">
+    <link rel="stylesheet" href="<?= SITE ?>css/favoris.css">
     <title>Document</title>
 
 

@@ -574,8 +574,11 @@ html {
 
 
   .maman {
-    top: 200px;
-    position: relative;
+    top: 465px;
+    position: absolute;
+    width: 50%;
+    left: -90px;
+
   }
   
   .dheader video {
@@ -944,3 +947,46 @@ html {
 }
 /* */ 
 
+.witcherclass {
+  padding-right: 50px;
+}
+
+
+/* NEW TEST */ 
+
+
+.multiple-items .slick-initialized .slick-slider {
+height: 40%;
+}
+
+
+
+/* CSS  TEST HOVER SLIDER */
+
+.description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.item:hover .description {
+  visibility: visible;
+  opacity: 1;
+  transition: 1s;
+}
+
+.item:hover {
+  background-color:#000;
+  opacity:0.5;
+  transition: 2s;
+}

@@ -1,7 +1,13 @@
 <!-- Header security -->
+<?php require_once '../inc/init.php'?> 
+
+<?php
+if(isset($_GET['unset'])):
+  unset($_SESSION['user']);
+endif;
+?>
 
 
-<?php require_once '../inc/init.php';   ?>
 <!doctype html>
 
 <html lang="fr">
@@ -16,7 +22,7 @@
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="<?= SITE.'css/style.css'; ?>">
-    <link rel="icon" type="image/png" href="./img-vid/streamlabs-obs.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="<?= SITE ?>img-vid/streamlabs-obs.png" sizes="16x16" />
 </head>
 <body>
 
@@ -42,10 +48,6 @@ endif; ?>
 
 <?php 
 
-if(connect()):
-    header('location:../');  //ICI: chemin page d'accueil
-    exit();
-endif;
 
 // Indentification à partir du mail: 
 if(!empty($_POST)):
@@ -58,7 +60,7 @@ if(!empty($_POST)):
         $user=$resultat->fetch(PDO::FETCH_ASSOC);
 
         // verif mdp: 
-        if(password_verify($_POST[ 'password'],$user['password'])):
+        if(password_verify($_POST['password'],$user['password'])):
             $_SESSION['user']=$user;
             $_SESSION['messages']['success'][]="Vous êtes à présent connecté.e";
             header('location:../'); 
@@ -101,11 +103,13 @@ endif; //fin ident. mail
 						<input name="password" id="inputPassword" class="form-control input-lg" type="password" placeholder="Password">
 					  </div>
 					  <div class="checkbox pull-right">
-						<label> <a class="forget" href="./forgot_password.php" title="forget">Forgot your password</a> </label>
+					<a class="forget" href="./security/forgot_password.php" title="forget">Forgot your password</a> </label>
 					  </div>
 					  <br>
 					  <div class="form-group">
 						<button type="submit" class="btn btn-success btn-lg btn-block">Log In</button>
+            <a href="./security/register.php" class="btn btn-success btn-lg btn-block">REGISTER</a>
+            </form>
 					  </div>
 				  </form>
 			  </div>
